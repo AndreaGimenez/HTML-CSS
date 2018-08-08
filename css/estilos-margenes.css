@@ -1,0 +1,15 @@
+.ppales{
+    color: pink;
+    font-size: 50px;
+    /* margin:100px ; arriba, abajo, izquierda y derecha */
+    /* margin: 100px ( arriba y abajo) 200px (izquierda y derecha) ; */ ; 
+    /* margin: 200px (arriba) 300px (derecha) 200px (abajo) 300px (izquierda) ; */
+
+    margin: 200px 500px ;
+}
+
+.titulares{
+    font-size: 35px;
+    background: red;
+    margin-right: 850px;
+}

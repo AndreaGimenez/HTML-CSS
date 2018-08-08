@@ -1,0 +1,19 @@
+.menu{
+background: #5cc1b3 ;
+font-size: 15px ;
+padding: 20px ;
+margin-right: 168px ;
+}
+
+.formatoCol{
+    background: #ea8a8a ;
+    color: #f2f2f2 ;
+    font-size: 20px;
+    padding: 20px ;
+    width: 25% ;
+    margin: 10px ; /*entre cada párrafo*/
+}
+
+.formatoFlex{
+    display: flex ;
+}
