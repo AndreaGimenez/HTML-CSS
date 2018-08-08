@@ -1,0 +1,20 @@
+.tituloFinal{
+    color:red ;
+}
+
+.subtituloPrincipal{
+    color: burlywood ; font-style: oblique ;
+}
+
+#mainText{
+    color:greenyellow ;
+    font-size: 40px;
+}
+
+.colorVerdeRGB1{
+    color: rgb(60, 179, 113);
+}
+
+.colorCelesteHexa1{
+    color: #6a5acd;
+}
