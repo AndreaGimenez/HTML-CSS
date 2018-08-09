@@ -1,0 +1,12 @@
+.botonAceptar{
+    background: #fad3cf;
+    color: #f9499e;
+}
+
+button:hover{
+    background: #8b104e;
+}
+
+button:active{
+    background: #bbbbbb; 
+}

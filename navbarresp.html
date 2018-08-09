@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/navbarresp.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navStyle">
+        <button class="nav-boton" onclick="accion()">Menú</button>
+        <a href="#" class="enlaces desaparece">Inicio</a> <!--con el espacio separo las clases-->
+        <a href="#" class="enlaces desaparece">Nosotros</a>
+        <a href="#" class="enlaces desaparece">Servicios</a>
+        <a href="#" class="enlaces desaparece">Contacto</a>
+    </nav>
+
+    <script>
+        /*quiero que js "borre" la clase desaparece cuando apreto Menú, y reaparece cuando vuelvo a apretar*/
+        function accion(){
+            var ancla = document.getElementsByClassName('enlaces') ;
+            for(var i = 0 ; i < ancla.length ; i++){
+                ancla[i].classList.toggle('desaparece') ;
+            }
+        }
+    </script>
+</body>
+</html>
