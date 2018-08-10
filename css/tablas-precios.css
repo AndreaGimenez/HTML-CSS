@@ -1,0 +1,52 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+h2{
+    font-weight: 400 ;
+    font-size: 50px;
+}
+p{
+    font-weight: 400;
+}
+.container{
+    margin: 0 auto ;
+    /*width: 500px ;/*css hace el calculo del margen porque es automatico*/
+    width: 90%;
+}
+.flex{
+    display: flex ;
+}
+.text-center{
+    text-align: center;
+}
+.columna{
+    background:  rgb(228,228,228) ;
+    color: #333 ;
+    margin: 10px ;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #333 ; /* tambien puede ser "dotted" o "double" */
+    /*border-right: 10px dotted red ;
+    border-left: 10px solid blue ;*/
+    box-shadow: 10px 10px 7px rgb(204, 182, 182); 
+}
+.precio{
+    font-weight: 600 ;
+    color: turquoise ;
+    font-size: 50px ;
+}
+.btn-precio{
+    background: lightcoral;
+    display: block ; /*porque es un elemento de linea y solo se pintaria el ancho de la palabra*/
+    padding: 10px;
+    border-radius: 3px;
+    text-decoration: none ;
+    color: #333;
+    font-weight: 600;
+}
+.btn-precio:hover{
+    background: rgb(243, 84, 84) ;
+}
+.btn-precio:active{
+    background: rgb(240, 44, 44) ;
+}
