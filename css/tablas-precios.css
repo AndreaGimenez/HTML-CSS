@@ -15,6 +15,7 @@ p{
 }
 .flex{
     display: flex ;
+    flex-wrap: wrap ;
 }
 .text-center{
     text-align: center;
@@ -22,13 +23,16 @@ p{
 .columna{
     background:  rgb(228,228,228) ;
     color: #333 ;
-    margin: 10px ;
+    margin: auto ;
+    margin-bottom: 20px;
     padding: 30px;
     border-radius: 10px;
     border: 2px solid #333 ; /* tambien puede ser "dotted" o "double" */
     /*border-right: 10px dotted red ;
     border-left: 10px solid blue ;*/
     box-shadow: 10px 10px 7px rgb(204, 182, 182); 
+    width: 23%;
+    box-sizing: border-box ; /*incluye bordes y paddings en el calculo del width*/
 }
 .precio{
     font-weight: 600 ;
@@ -49,4 +53,16 @@ p{
 }
 .btn-precio:active{
     background: rgb(240, 44, 44) ;
+}
+@media(max-width: 1070px){
+    .columna{
+        width: 45% ; /*para que se genere espaciado*/
+       /* margin-bottom: 20px; lo pongo directamente en .columna*/
+    }
+}
+@media(max-width: 700px){
+    .columna{
+        width: 90%;
+
+    }
 }
