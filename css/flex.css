@@ -1,0 +1,33 @@
+*{
+    margin: 0 ; /*todos los margenes son nulos predeterminadamente*/
+    padding: 0 ; /*todos los padding son nulos predeterminadamente*/
+
+}
+
+.contenedorPadre{
+    width: 80% ;
+    height: 500px ;
+    background: #FF5C29 ;
+    margin: 50px auto ; 
+    display: flex;
+    flex-direction: column ; /*para el modo responsive*/
+    flex-direction: row ; /*pone las cajas en una linea*/
+    flex-wrap: wrap; /*respeta obligatoriamente el ancho de las cajitas, por defecto está "no wrap"*/
+    justify-content: space-around ; /* flex-end = alineacion derecha ; flex-star= alineacion izquierda ; center = alineacion centrada ; space-between = genera un espacio entre                           las cajas ; space-around = espacio entre kas cajas y márgenes */
+    align-items: center ; /*centra los elementos en la pantalla*/
+}
+
+.contenedorHijo{
+    background: #00B285 ;
+    width: 200px ; /*sirve para establecer la cantidad de cajitas por linea*/
+    height: 100px;
+    color: #fff ;
+    margin: 30px ;
+    padding: 20px ;
+    font-size: 40 px ;
+    text-align: center ;
+    /*flex-grow: 1 ; /*las cajas abarcan wl 100% del espacio disponible*/
+    /*flex-shrink: 0 ;/*siempre se respeta el ancho*/
+    flex: 1 1 auto ; /*hace lo mismo que las dos propiedades de arriba juntas*/
+    
+}
