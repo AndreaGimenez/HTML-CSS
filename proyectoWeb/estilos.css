@@ -76,3 +76,29 @@
             background: #e6af2e ;
             width: 300px ;
         }
+
+@media all and (max-width: 800px){
+    .section{
+        flex-direction: column ; /*para que el aside pase abajo*/
+    }
+    .menu{
+        flex-direction: column ;
+        height: auto ;
+    }
+    .aside{
+        display: flex ;
+        justify-content: center;
+        
+    }
+}
+@media all and (max-width: 600px){
+    .articulos{
+        flex-direction: column ;
+    }
+}
+@media all and (max-width: 400px){
+    .aside{
+        flex-direction: column ;
+    }
+    }
+}
