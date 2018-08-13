@@ -13,7 +13,10 @@ a{
     background: white ;
     display: flex ;
     flex-flow: column nowrap;
-}   
+}
+.margen-interno{
+    padding: 0 50px ;
+}
     .header{
         background: url(../imagenes/bckgrd.jpg) ;/*va un directorio atras a la carpeta imagenes*/
         background-position: center ;
@@ -33,7 +36,7 @@ a{
             .logo{
                 flex: 1 1 auto ;
                 
-            }
+            }        
                 .logo a{ /*Le da color al texto del ancla en el logo*/
                     color: #fff ;
                     font-size: 30px ;
@@ -81,7 +84,7 @@ a{
                 line-height: 1.6 ; /*interlineado*/
             }
     .section{
-        background: #000 ;
+        background: #f7f7f7;
         display: flex ;
     }
         .articulos{
@@ -98,9 +101,22 @@ a{
                 padding: 10px 10px 0 0 ;
                 flex: 1 1 45% ;
                 background: #ececec ;
+                margin: 10px 10px 0px 0px ;
+                
             }
             .article img{
                 weight: 100% ;
+            }
+            .article a{
+                color: #fff;
+                padding: 10px 10px ;
+                font-size: 14px ;
+                margin: 10px 0 ;
+                background: #000 ;
+                display: inline-block ;
+            }
+            .article a:hover{
+               background: #546cc3;
             }
             h3{
                 color: #fff ;
@@ -115,24 +131,45 @@ a{
                 padding: 0 0 10px 0 ;
             }
             .navegacion{
-                background: #70a3c4 ;
+                background: black  ;
                 flex: 1 1 100%;
+                margin: 10px 10px 0px 0px ;
+            }
+            .navegacion a{
+                color: #fff ;
+                font-size: 11px ;
+                text-transform: uppercase ;
+                padding: 0 10px ;
+                letter-spacing: 2px ;
+
             }
         .aside{
-            background: #f73f52 ;
+            /*background: #f73f52 ;*/
             flex: 1 1 auto ;
+            margin: 10px 5px 10px 0 ;
         }
-            .publicidad{
-                background: #ffea85;
+            h4{
+                background: #000 ;
+                color: #fff ;
+                padding: 10px ;
+                text-transform: uppercase ;
             }
     .footer{
         background: #000 ;
         display: flex ;
         justify-content: center ;
+        margin-top: 10px ;
     }
         .pie{
-            background: #e6af2e ;
-            width: 300px ;
+           /* background: #e6af2e ;*/
+            text-align: center ;
+        }
+        .pie a{
+            color: #fff ;
+            font-size: 11px ;
+            text-transform: uppercase ;
+            padding: 0 10px ;
+            letter-spacing: 2px ;
         }
 
 @media all and (max-width: 800px){
