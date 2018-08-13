@@ -3,14 +3,19 @@
     padding: 10px ;
     box-sizing: border-box ;
 }
-
+body{
+    font-family: 'Dosis', sans-serif;
+}
 .padre{
     background: white ;
     display: flex ;
     flex-flow: column nowrap;
 }   
     .header{
-        background: #000 ;
+        background: url(../imagenes/El-Viaje-de-tus-Suenos_2.jpg) ;/*va un directorio atras a la carpeta imagenes*/
+        background-position: center ;
+        background-attachment: contain ;
+        background-size: cover;
         display: flex ;
         flex-flow: column nowrap;
     }
@@ -24,17 +29,17 @@
             .logo{
                 background: #ea5455 ;
                 flex: 1 1 auto ;
-                height: 30px ;
+                
             }
             .nav{
                 background: #ea5455 ;
                 flex: 5 1 auto ;
-                height: 30px ;
+                
             }
             .social{
                 background: #ea5455 ;
                 flex: 1 1 auto ;
-                height: 30px ;
+                
             }
         .texto-principal{
             background: #f07b3f ;
@@ -99,6 +104,5 @@
 @media all and (max-width: 400px){
     .aside{
         flex-direction: column ;
-    }
     }
 }
